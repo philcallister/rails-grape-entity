@@ -38,12 +38,19 @@ Seed data
 rake db:seed
 ```
 
+## Testing
+
+```bash
+rake db:test:prepare # deprecated but may need to run it
+rake spec
+```
+
 ## Run It
 
 start the Rails server
 
 ```bash
-rails server
+rails s
 ```
 
 ## Usage
