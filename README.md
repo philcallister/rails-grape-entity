@@ -46,7 +46,7 @@ bundle exec rspec spec
 
 ## Run It
 
-start the Rails server
+Start the Rails server
 
 ```bash
 rails s
