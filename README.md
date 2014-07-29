@@ -4,6 +4,9 @@ This is an example application showing how to use
 [grape](https://github.com/intridea/grape) to create a simple API using
 entities with the [grape-entity](https://github.com/intridea/grape-entity) gem.
 This sample shows how to create a simple API without authentication, caching, etc.
+It also only shows GET requests.  It doesn't update or delete any information.  I
+plan to add a few examples, but this is really just to show how Grape + Grape-Entity
+work together.
 
 ## Environment
 
