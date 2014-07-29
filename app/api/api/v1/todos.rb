@@ -6,12 +6,18 @@ module API
       resource :todos do
 
         desc "Return list of todos"
+        params do
+          optional :type, type: String, desc: "Use type 'all' to include todo items on the response"
+        end
         get do
           todos = Todo.all
           present todos, with: API::V1::Entities::Todo, type: params[:type]       
         end
 
         desc "Just a single todo"
+        params do
+          optional :type, type: String, desc: "Use type 'all' to include todo items on the response"
+        end
         get ':id' do
           todo = Todo.find(params[:id])
           present todo, with: API::V1::Entities::Todo, type: params[:type]
