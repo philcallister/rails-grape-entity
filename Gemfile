@@ -43,9 +43,10 @@ gem 'annotate'
 
 gem 'grape'
 gem 'grape-entity'
+gem 'grape-swagger'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
-  gem 'database_cleaner'
 end

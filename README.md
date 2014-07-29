@@ -41,6 +41,7 @@ rake db:seed
 ## Testing
 
 ```bash
+rake db:test:prepare # deprecated -- not sure why test db still needs to be prepared.  TBD...
 bundle exec rspec spec
 ```
 
@@ -89,3 +90,22 @@ Failure to get an item
 ```bash
 curl -i http://localhost:3000/api/v1/items/999
 ```
+
+## Swagger Support
+First, install [Swagger](https://github.com/wordnik/swagger-ui) somewhere locally.
+
+```bash
+git clone https://github.com/wordnik/swagger-ui.git
+```
+
+Make sure the Rails server is running
+
+```bash
+rails s
+```
+
+From Chrome or Safari, open the locally installed Swagger swagger-ui/dist/index.html file.  In the text
+field that currently lists __http://petstore.swagger.wordnik.com/api/api-docs__, change this to
+__http://localhost:3000/api/swagger_doc__
+
+From here, you'll be able to explore the API through the Swagger UI.
