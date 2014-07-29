@@ -104,7 +104,7 @@ Make sure the Rails server is running
 rails s
 ```
 
-From Chrome or Safari, open the locally installed Swagger swagger-ui/dist/index.html file.  In the text
+From Chrome or Safari, open the locally installed Swagger __swagger-ui/dist/index.html__ file.  In the text
 field that currently lists __http://petstore.swagger.wordnik.com/api/api-docs__, change this to
 __http://localhost:3000/api/swagger_doc__
 
