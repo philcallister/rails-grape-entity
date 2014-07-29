@@ -41,8 +41,7 @@ rake db:seed
 ## Testing
 
 ```bash
-rake db:test:prepare # deprecated but may need to run it
-rake spec
+bundle exec rspec spec
 ```
 
 ## Run It
