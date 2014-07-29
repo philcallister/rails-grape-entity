@@ -13,7 +13,7 @@ work together.
 The sample was developed using the following 
 
 1. Rails 4.1.4
-2. ruby 2.1.0p0
+2. Ruby 2.1.0p0
 3. OS X 10.9.4
 4. Grape (0.8.0) 
 5. Grape Entity (0.4.3) 
