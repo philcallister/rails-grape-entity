@@ -6,6 +6,7 @@ module API
 
     # This could be uncommented to support an additional version
     # mount API::V2::Base
-    add_swagger_documentation :api_version => 'v1', :base_path => '/api'
+    add_swagger_documentation :api_version => 'v1', 
+                              :base_path => '/api'
   end
 end
