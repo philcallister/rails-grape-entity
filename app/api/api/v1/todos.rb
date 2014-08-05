@@ -42,8 +42,34 @@ module API
           present todo.items, with: API::V1::Entities::Item
         end
 
-      end
+        #####
+        desc "Create a new todo", { :entity => API::V1::Entities::Todo }
+        params do
+          requires :title, type: String, desc: "The title for this todo"
+          optional :description, type: String, desc: "The description for this todo"
+        end
+        post '/', http_codes: [
+          [200, "Ok", API::V1::Entities::Todo]
+        ] do
+          todo = Todo.new
+          todo.title = params[:title] if params[:title]
+          todo.description = params[:description] if params[:description]
+          todo.save 
+          
+          status 200
+          present todo, with: API::V1::Entities::Todo
+        end
 
+        #####
+        desc "Delete an existing todo"
+        params do
+          requires :id, type: Integer
+        end
+        delete ':id' do
+          Todo.destroy(params[:id])
+        end
+
+      end
     end
   end
 end
