@@ -108,4 +108,10 @@ From Chrome or Safari, open the locally installed Swagger __swagger-ui/dist/inde
 field that currently lists __http://petstore.swagger.wordnik.com/api/api-docs__, change this to
 __http://localhost:3000/api/swagger_doc__
 
+Note: Once you've installed Swagger UI, you may need to cd to the Swagger UI directory:
+```bash
+git checkout v2.0.18
+```
+grape-swagger doesn't appear to work with the lastest version of Swagger UI
+
 From here, you'll be able to explore the API through the Swagger UI.
