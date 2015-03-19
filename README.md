@@ -97,11 +97,6 @@ First, install [Swagger](https://github.com/wordnik/swagger-ui) somewhere locall
 ```bash
 git clone https://github.com/wordnik/swagger-ui.git
 ```
-Note: grape-swagger doesn't appear to work with the lastest version of Swagger UI.
-Once you've installed Swagger UI, you may need to cd to the Swagger UI directory:
-```bash
-git checkout v2.0.18
-```
 
 Make sure the Rails server is running
 
