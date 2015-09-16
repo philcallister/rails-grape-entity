@@ -8,6 +8,8 @@ It also only shows GET requests.  It doesn't update or delete any information.  
 plan to add a few examples, but this is really just to show how Grape + Grape-Entity
 work together.
 
+**_New and Improved_**: Check out the [grape-rack-roar-swagger](https://github.com/philcallister/grape-rack-roar-swagger) project! [ROAR](https://github.com/apotonick/roar) is very nice. Give a try!
+
 ## Environment
 
 The sample was developed using the following 
